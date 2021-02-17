@@ -7,7 +7,7 @@
 
 .navbar {
   width: 100%;
-  height: 100px;
+  height: 95px;
   background-color: #101010;
   display: flex;
   flex-direction: column;
@@ -32,6 +32,7 @@
   width: 30%;
   display: flex;
   align-self: flex-end;
+  font-size: 12px;
   margin-right: 250px;
   color: #999999;
 }
@@ -42,6 +43,7 @@
 .navbar-down {
   height: 50%;
   width: 60%;
+  font-size: 12px;
   display: flex;
   align-self: center;
   color: #F1F1F1;
@@ -176,6 +178,13 @@
   align-items: center;
   justify-content: space-around;
   list-style: none;
+}
+.main-navbar ul li:first-child {
+  border-bottom: 4px solid black;
+  line-height: 59px;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
 }
 
 .section-one {
