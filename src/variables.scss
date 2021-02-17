@@ -6,9 +6,14 @@
 
 @mixin centred-separated {
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 $jumbotronImg : "../img/jumbotron.jpg";
 $mainTitleBg: "../img/intro-top.jpg";
 $mainContentBg:"../img/intro-bg.jpg";
 $mainContentFlow:"../img/flow.png";
+
+$smartphone: 480px;
+$tablet:768px;
+$ltlscreen:1100px;

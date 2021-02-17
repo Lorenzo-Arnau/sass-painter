@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .navbar {
   width: 100%;
-  height: 95px;
+  min-height: 95px;
   background-color: #101010;
   display: flex;
   flex-direction: column;
@@ -16,6 +16,7 @@
   display: flex;
   width: 100%;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
   list-style: none;
@@ -26,6 +27,12 @@
 }
 .navbar .list .logo img {
   width: 100%;
+}
+@media (max-width: 480px) {
+  .navbar .list .logo {
+    width: 300px;
+    margin: 0 45px;
+  }
 }
 .navbar-up {
   height: 50%;
@@ -40,6 +47,16 @@
   color: #009CFF;
   margin-right: 2px;
 }
+@media (max-width: 1100px) {
+  .navbar-up {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-up {
+    display: none;
+  }
+}
 .navbar-down {
   height: 50%;
   width: 60%;
@@ -50,6 +67,11 @@
 }
 .navbar-down i {
   color: #999999;
+}
+@media (max-width: 480px) {
+  .navbar-down {
+    width: 100%;
+  }
 }
 
 .jumbotron {
@@ -82,6 +104,11 @@
   font-weight: normal;
   padding: 20px 15px;
 }
+@media (max-width: 480px) {
+  .jumbotron-content-one .title-container h2 {
+    padding: 0;
+  }
+}
 .jumbotron-content-one .subtitle, .jumbotron-content-one ul {
   margin: 20px 0px;
   font-size: 1.1em;
@@ -98,6 +125,11 @@
   height: 70px;
   display: flex;
   border: 2px solid #101010;
+}
+@media (max-width: 768px) {
+  .jumbotron-content-one .download-trial {
+    width: 200px;
+  }
 }
 .jumbotron-content-one .download-trial-specs {
   width: 70%;
@@ -116,6 +148,16 @@
   font-size: 35px;
   color: #999999;
   height: 100%;
+}
+@media (max-width: 480px) {
+  .jumbotron-content-one .download-trial-button {
+    width: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .jumbotron-content-one {
+    font-size: 0.8em;
+  }
 }
 .jumbotron-content-two {
   height: 96%;
@@ -143,7 +185,6 @@
 .jumbotron-content-two .download-specs .price span:first-child {
   color: #F1F1F1;
   font-size: 25px;
-  font-weight: bold;
 }
 .jumbotron-content-two .download-specs .moneyback {
   width: 20%;
@@ -151,6 +192,11 @@
   align-items: center;
   margin-right: 15px;
   height: 100%;
+}
+@media (max-width: 480px) {
+  .jumbotron-content-two .download-specs .moneyback img {
+    height: 60px;
+  }
 }
 .jumbotron-content-two .button-download {
   width: 150px;
@@ -163,6 +209,12 @@
   font-size: 14px;
   background-color: #009CFF;
 }
+@media (max-width: 1100px) {
+  .jumbotron-content {
+    width: 100%;
+    margin: 0;
+  }
+}
 
 .main-navbar {
   width: 100%;
@@ -172,12 +224,19 @@
   justify-content: center;
 }
 .main-navbar ul {
-  width: 50%;
+  width: 35%;
   height: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
+}
+@media (max-width: 768px) {
+  .main-navbar ul {
+    width: 100%;
+    font-size: 12px;
+  }
 }
 .main-navbar ul li:first-child {
   border-bottom: 4px solid black;
@@ -205,6 +264,11 @@
   margin-bottom: 40px;
   line-height: 25px;
 }
+@media (max-width: 768px) {
+  .section-one-title h2, .section-one-title p {
+    margin-bottom: 15px;
+  }
+}
 .section-one-title p {
   font-weight: 500;
 }
@@ -213,7 +277,7 @@
 }
 .section-one-content {
   width: 100%;
-  height: 110vh;
+  min-height: 110vh;
   background-image: url("../img/intro-bg.jpg");
   background-position: top;
   position: relative;
@@ -252,6 +316,12 @@
   align-items: flex-end;
   bottom: 0;
 }
+@media (max-width: 768px) {
+  .section-one-content .flow {
+    transform: rotate(90deg);
+    width: 80%;
+  }
+}
 .section-one-content .flow .canvas, .section-one-content .flow .photo, .section-one-content .flow .brushes {
   width: 33%;
   height: 90%;
@@ -261,12 +331,45 @@
   justify-content: center;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .section-one-content .flow .canvas, .section-one-content .flow .photo, .section-one-content .flow .brushes {
+    transform: rotate(270deg);
+    flex-direction: row;
+  }
+}
 .section-one-content .flow .canvas h2, .section-one-content .flow .photo h2, .section-one-content .flow .brushes h2 {
   margin: 20px 0px;
+}
+@media (max-width: 768px) {
+  .section-one-content .flow .canvas h2, .section-one-content .flow .photo h2, .section-one-content .flow .brushes h2 {
+    margin: 10px 0px;
+    font-size: 16px;
+  }
 }
 .section-one-content .flow .canvas p, .section-one-content .flow .photo p, .section-one-content .flow .brushes p {
   line-height: 25px;
 }
+@media (max-width: 768px) {
+  .section-one-content .flow .canvas p, .section-one-content .flow .photo p, .section-one-content .flow .brushes p {
+    line-height: 10px;
+    font-size: 10px;
+  }
+}
 .section-one-content .flow img {
   height: 200px;
+}
+@media (max-width: 1100px) {
+  .section-one-content .flow img {
+    height: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .section-one-content .flow img {
+    height: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .section-one-content .flow img {
+    height: 70px;
+  }
 }
