@@ -204,7 +204,7 @@
 }
 .section-one-content {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-image: url("../img/intro-bg.jpg");
   background-position: top;
   position: relative;
@@ -230,4 +230,34 @@
 }
 .section-one-content .play i:hover {
   color: #F1F1F1;
+}
+.section-one-content .flow {
+  height: 400px;
+  width: 60%;
+  background-image: url("../img/flow.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  bottom: 0;
+}
+.section-one-content .flow .canvas, .section-one-content .flow .photo, .section-one-content .flow .brushes {
+  width: 33%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section-one-content .flow .canvas h2, .section-one-content .flow .photo h2, .section-one-content .flow .brushes h2 {
+  margin: 20px 0px;
+}
+.section-one-content .flow .canvas p, .section-one-content .flow .photo p, .section-one-content .flow .brushes p {
+  line-height: 25px;
+}
+.section-one-content .flow img {
+  height: 200px;
 }
