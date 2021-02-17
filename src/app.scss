@@ -10,11 +10,10 @@
     width: 100%;
     min-height: 95px;
     background-color: $brandBlack;
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     
     .list{
-        display: flex;
+        @include flex-row;
         width: 100%;
         @include centred-separated;
         padding: 10px;
@@ -45,7 +44,7 @@
     &-up{
         height: 50%;
         width: 30%;
-        display: flex;    
+        @include flex-row;   
         align-self: flex-end;
         font-size: 12px;
         margin-right: 250px;
@@ -66,7 +65,7 @@
         height: 50%;
         width:60%;
         font-size: 12px;
-        display: flex;
+        @include flex-row;  
         align-self: center;
         color: $brandFontWhite;
         i{
@@ -83,15 +82,14 @@
     height: 480px;
     background-image: url($jumbotronImg);
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-row;  
+    @include content-centred;
 
     &-content{
         width: 45%;
         height: 100%;
         margin-left: 250px;
-        display: flex;
+        @include flex-row;  
         align-items: flex-end;
         &-one{
             height: 90%;
@@ -126,7 +124,7 @@
             .download-trial{
                 width: 250px;
                 height: 70px;
-                display: flex;
+                @include flex-row;  
                 border: 2px solid $brandBlack;
                 @media (max-width:$tablet) {
                     width: 200px;
@@ -134,17 +132,15 @@
                 &-specs{
                     width: 70%;
                     height: 100%;
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-col;
                     justify-content: center;
                     padding: 10px;   
                     font-size: 14px;   
                 }
                 &-button{
                     width: 30%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-row;  
+                    @include content-centred;
                     font-size: 35px;
                     color: $brandFontGrey;
                     height: 100%;
@@ -166,11 +162,10 @@
                 width: 100%;
                 height: 100px;
                 justify-content: space-between;
-                display: flex;
+                @include flex-row;  
                 .price{
                     width: 50%;
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-col;  
                     justify-content: flex-end;
                     height: 100%;
                     span{
@@ -185,7 +180,7 @@
                 }
                 .moneyback{
                     width: 20%;
-                    display: flex;
+                    @include flex-row;  
                     align-items: center;
                     margin-right: 15px;
                     height: 100%;
@@ -200,9 +195,8 @@
                 width: 150px;
                 height: 40px;
                 margin: 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-row;  
+                @include content-centred;
                 color: $brandFontWhite;
                 font-size: 14px;
                 background-color: $brandBlue;
@@ -218,12 +212,12 @@
     width: 100%;
     height: 60px;
     background-color: #E6E6E6;
-    display: flex;
+    @include flex-row;  
     justify-content: center;
     ul{
         width: 35%;
         height: 100%;
-        display: flex;
+        @include flex-row;  
         @include centred-separated;
         list-style: none;
         @media (max-width:$tablet) {
@@ -240,14 +234,13 @@
     }
 }
 .section-one{
-    display: flex;
+    @include flex-row;  
     flex-wrap: wrap;
     &-title{
         width: 100%;
         height: 250px;
         background-image: url($mainTitleBg);
-        display: flex;
-        flex-direction: column;
+        @include flex-col;  
         justify-content: flex-end;
         text-align: center;
         align-items: center;
@@ -272,18 +265,17 @@
         background-position: top;
         position: relative;
         justify-content: center;
-        display: flex;
+        @include flex-row;  
         background-repeat: no-repeat;
         .play{
             height: 150px;
             width: 150px;
             background-color:rgba($color: #000000, $alpha: 0.5);
             top: 250px;
-            display: flex;
+            @include flex-row;  
             border-radius: 50%;
             position: absolute;
-            align-items: center;
-            justify-content: center;
+            @include content-centred;
             i{
                 color: royalblue;
                 font-size: 45px;
@@ -301,7 +293,7 @@
             background-size: contain;
             background-repeat: no-repeat;
             position: absolute;
-            display: flex;
+            @include flex-row;  
             align-items: flex-end;
             bottom: 0;
             @media (max-width:$tablet) {
@@ -311,14 +303,12 @@
             .canvas,.photo,.brushes{
                 width: 33%;
                 height: 90%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                @include flex-col;  
+                @include content-centred;
                 text-align: center;
                 @media (max-width:$tablet) {
                     transform: rotate(270deg);
-                    flex-direction: row;
+                    @include flex-row;  
                    }
                 h2{
                     margin: 20px 0px;

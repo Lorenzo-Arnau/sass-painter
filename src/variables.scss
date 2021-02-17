@@ -9,6 +9,18 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+@mixin flex-col{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+@mixin content-centred{
+    justify-content: center;
+    align-items: center;
+}
 $jumbotronImg : "../img/jumbotron.jpg";
 $mainTitleBg: "../img/intro-top.jpg";
 $mainContentBg:"../img/intro-bg.jpg";
