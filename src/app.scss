@@ -20,6 +20,16 @@
         padding: 10px;
         list-style: none;
         
+         li{
+            @media (max-width:$tablet) {
+                display: none;
+            }  
+        }
+        .first-logo{
+            @media (max-width:$tablet) {
+              display: block;
+            } 
+        }
         .logo{
             height: 100%;
             width: 100px;

@@ -21,6 +21,16 @@
   padding: 10px;
   list-style: none;
 }
+@media (max-width: 768px) {
+  .navbar .list li {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .list .first-logo {
+    display: block;
+  }
+}
 .navbar .list .logo {
   height: 100%;
   width: 100px;
