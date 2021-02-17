@@ -1,0 +1,184 @@
+@import "variables";
+@import "colors";
+
+
+*{
+    @include reset;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: $brandBlack;
+    display: flex;
+    flex-direction: column;
+
+     .list{
+        display: flex;
+        width: 100%;
+        @include centred-separated;
+        padding: 10px;
+        list-style: none;
+        .logo{
+            height: 100%;
+            width: 100px;
+            img{
+                width: 100%;
+            }
+        }
+     }
+    &-up{
+        height: 50%;
+        width: 30%;
+        display: flex;    
+        align-self: flex-end;
+        margin-right: 250px;
+        color: $brandFontGrey;
+        i{
+            color: $brandBlue;
+            margin-right: 2px;
+        }
+    }
+    &-down{
+        height: 50%;
+        width:60%;
+        display: flex;
+        align-self: center;
+        color: $brandFontWhite;
+        i{
+            color: $brandFontGrey; 
+        }
+    }
+}
+
+.jumbotron{
+    width: 100%;
+    height: 480px;
+    background-image: url($jumbotronImg);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-content{
+        width: 45%;
+        height: 100%;
+        margin-left: 250px;
+        display: flex;
+        align-items: flex-end;
+
+        &-one{
+            height: 90%;
+            width: 50%;
+            .title-container{
+                > span{
+                    color: #B96DCA;
+                    font-size: 30px;
+                    font-style: italic;
+                }
+                h2{
+                    display: inline-block;
+                    font-weight: normal;
+                    padding: 20px 15px;
+                }
+            }
+
+            .subtitle,ul{
+                margin: 20px 0px;
+                font-size: 1.1em;
+            }
+            ul li{
+                margin: 20px 0px;
+                list-style: none;
+                i{
+                    color: $brandFontGrey;
+                }  
+            }
+            .download-trial{
+                width: 250px;
+                height: 70px;
+                display: flex;
+                border: 2px solid $brandBlack;
+                &-specs{
+                    width: 70%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 10px;   
+                    font-size: 14px;   
+                }
+                &-button{
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 35px;
+                    color: $brandFontGrey;
+                    height: 100%;
+                }
+            }
+        }
+        &-two{
+            height: 96%;
+            width: 50%;
+            background-color: $brandBlack;
+
+            .download-specs{
+                width: 100%;
+                height: 100px;
+                justify-content: space-between;
+                display: flex;
+                .price{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    height: 100%;
+                    span{
+                        margin: 5px 15px;
+                        font-size: 14px;
+                        color: $brandFontGrey;
+                    }
+                    span:first-child{
+                        color: $brandFontWhite;
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+                }
+                .moneyback{
+                    width: 20%;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 15px;
+                    height: 100%;
+                }
+            }
+            .button-download{
+                width: 150px;
+                height: 40px;
+                margin: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $brandFontWhite;
+                font-size: 14px;
+                background-color: $brandBlue;
+            }
+        }
+    }
+}
+.main-navbar{
+    width: 100%;
+    height: 70px;
+    background-color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    ul{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        @include centred-separated;
+        list-style: none;
+    }
+}

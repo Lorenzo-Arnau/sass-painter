@@ -1,0 +1,11 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin centred-separated {
+    align-items: center;
+    justify-content: space-around;
+}
+$jumbotronImg : "../img/jumbotron.jpg";
